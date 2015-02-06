@@ -2,7 +2,7 @@ name: "Geekman's Blog"
 owner: "Rohit Mulange"
 photo: "photo.jpg"
 description: ""
-url: "http://blog.rohit.codes"
+url: ""
 paginate: 10
 markdown: rdiscount
 permalink: pretty
