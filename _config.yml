@@ -1,0 +1,9 @@
+name: "Geekman's Blog"
+owner: "Rohit Mulange"
+photo: "photo.jpg"
+description: ""
+url: "http://geekman-rohit.github.io/blog"
+paginate: 10
+markdown: rdiscount
+permalink: pretty
+timezone: asia/kolkata
