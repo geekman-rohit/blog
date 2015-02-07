@@ -51,5 +51,7 @@ $(document).ready(function(){
 
     $('.sidebar-toggle').click(sideToggle)
     $('.posts-holder').css('min-height',$(window).height())
+    $('.sidebar').css('height',$(window).height())
+    
 
 })
