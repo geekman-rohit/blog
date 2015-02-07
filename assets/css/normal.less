@@ -24,7 +24,7 @@ body{
     img{
 
         border-radius: 200px;
-        width:35%;
+        width:120px;
 
     }
 }
@@ -196,7 +196,7 @@ body{
                 background-color: none !important;
                 &:hover,&:focus{
                     background: none;
-                    color:@primary-dark;
+                    color:darken(@primary,10%);
                     border-radius:0;
                 }
 
@@ -221,6 +221,11 @@ body{
 
     .post-list{
         padding:40px 60px;
+        @media screen and (max-width:991px) {
+
+            padding:20px 30px;
+        }
+
         ul.posts{
             margin:0;
             margin-top: 10px;
@@ -229,11 +234,12 @@ body{
 
                 margin:0;
                 display:block;
-                margin-bottom: 20px;
-                border-bottom: 1px solid #eee;
-                padding-bottom: 20px;
-
                 padding:0;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 30px;
+
+
 
                 h2{
 
@@ -241,7 +247,11 @@ body{
                     font-size:1.5em;
                 }
                 a{
-                    color:@primary-dark;
+                    color:darken(@primary,10%);
+                    &:hover{
+                        text-decoration:none;
+                        color:darken(@primary,30%);
+                    }
                 }
                 span.meta{
 
@@ -254,7 +264,8 @@ body{
 
                     text-align:justify;
                     font-size: 1em;
-                    color:#333;
+                    color:#111;
+
                 }
             }
         }
@@ -299,6 +310,12 @@ nav.navbar-inverse.navbar{
             }
             &.button{
                 color:white;
+                &.active{
+                    background-color:darken(@primary,2%);
+                }
+                &:focus{
+                    outline:0;
+                }
             }
         }
 
@@ -324,5 +341,8 @@ nav.navbar-inverse.navbar{
 
     .only-md {
         display:none;
+    }
+    nav a.button{
+        float:right;
     }
 }

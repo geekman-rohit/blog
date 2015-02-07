@@ -4,11 +4,11 @@ $(document).ready(function(){
     var firstTime=true;
     var width;
 
-    $(document).on("swipeleft",function(){
-          showSideBar();
-    });
-    $(document).on("swiperight",function(){
+    $('body').on("swipeleft",function(){
           hideSideBar();
+    });
+    $('body').on("swiperight",function(){
+        showSideBar();
     });
 
     var sideToggle=function(){
@@ -28,7 +28,7 @@ $(document).ready(function(){
         width=$('.sidebar.sidebar-left').width()
         $('.sidebar.sidebar-left').animate({left:-width},200)
         sidebarStatus=false;
-
+        $('.sidebar-toggle').removeClass('active')
     }
 
     var showSideBar=function(){
@@ -38,7 +38,7 @@ $(document).ready(function(){
             $('.sidebar.sidebar-left').css('left',-width)
             $('.sidebar.sidebar-left').show()
             firstTime=false
-
+            $('.sidebar-toggle').addClass('active')
         }
 
         $('.sidebar.sidebar-left').show()
