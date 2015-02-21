@@ -3,14 +3,14 @@ $(document).ready(function(){
     var sidebarStatus=false;
     var firstTime=true;
     var width;
-
-    $('body').on("swipeleft",function(){
-          hideSideBar();
-    });
-    $('body').on("swiperight",function(){
-        showSideBar();
-    });
-
+    if($(window).width()<992) {
+        $('body').on("swipeleft",function(){
+              hideSideBar();
+        });
+        $('body').on("swiperight",function(){
+            showSideBar();
+        });
+    }
     var sideToggle=function(){
         if(sidebarStatus) {
 

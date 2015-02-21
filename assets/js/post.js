@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     var width;
 
-
+if($(window).width()<992) {
 
     $('body').on("swipeleft",function(){
         hideSideBar();
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
           showSideBar();
     });
-
+}
     var sideToggle=function(){
         if(sidebarStatus) {
 
