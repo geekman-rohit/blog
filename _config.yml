@@ -3,6 +3,7 @@ owner: "Rohit Mulange"
 photo: "photo.jpg"
 description: ""
 url: ""
+highlighter: "pygments"
 paginate: 10
 markdown: rdiscount
 permalink: pretty
