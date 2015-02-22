@@ -2,6 +2,7 @@
 layout: post
 title: Regal Blog Template for Jekyll
 cover: cover.jpg
+categories: [uncategorized]
 ---
 Spent the night working on regal, making it responsive and mobile friendly. I still do not like how the page looks on mobiles, nothing wrong in it. layout adjusts as it is supposed to. It is just the lack of sidebar makes the page look kind of too.. plain?
 

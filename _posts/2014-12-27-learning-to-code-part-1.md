@@ -2,6 +2,7 @@
 layout: cover
 title: "Learning to Code : The hard way - Part 1: Where to start? !"
 cover: puzzle.jpg
+categories: [coding, tutorial]
 ---
 
 More often than not, I have faced questions from juniors that include : "How do I learn to code? ", "How do I excel in computer science", and almost always I have strategically avoided answering such questions.

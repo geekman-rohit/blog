@@ -6,13 +6,14 @@ $(document).ready(function(){
 
 if($(window).width()<992) {
 
-    $('body').on("swipeleft",function(){
-        hideSideBar();
-    });
-    $('body').on("swiperight",function(){
-
-          showSideBar();
-    });
+        $('.sidebar.sidebar-left').on("swipeleft",function(){
+              hideSideBar();
+        });
+        /*
+        $('body').on("swiperight",function(){
+            showSideBar();
+        });
+        */
 }
     var sideToggle=function(){
         if(sidebarStatus) {
@@ -43,6 +44,7 @@ if($(window).width()<992) {
         $('.sidebar-toggle').addClass('active')
 
     }
+    $('.sidebar').css('height',$(window).height())
     sideToggle()
     $('.sidebar-toggle').click(sideToggle)
     $('img').on("load",hideSideBar)

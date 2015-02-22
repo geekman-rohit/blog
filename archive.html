@@ -1,0 +1,30 @@
+---
+layout: page
+title: Archive
+permalink: /archives/
+---
+<div class="page">
+<h2>Archives</h2>
+<ul class="archive">
+	{% if site.posts != empty %}
+		{% for post in site.posts %}
+			
+			{% capture cur_date %} {{ post.date | date:"%Y, %B" }} {% endcapture %}
+			
+
+			{% if cur_date != last_date %}
+
+				<h4> {{ post.date | date:"%Y, %B"}} </h4>
+
+			{% endif %}
+
+			
+			<li><a href="{{ post.url }}">{{ post.title }} </a><span class="date">{{ post.date | date:"%B %e ,%Y"}}</span></li>
+
+
+			{% capture last_date %} {{ post.date | date:"%Y, %B" }} {% endcapture %}
+
+		{% endfor %}
+	{% endif %}
+</ul>
+</div>
