@@ -75,7 +75,7 @@ header{
 
             float:left;
             position:relative;
-            top:25px;
+            top:20px;
             left:10%;
             margin-left:-35px;
             width:30px;
@@ -85,16 +85,13 @@ header{
             border:1px solid $secondary;
             z-index:10;
             @media screen and (max-width:992px) {
-                display:block;
-                top:20px;
-                width:25px;
-                height:25px;
+                display:none;
             }
         }
         .dummy.secondary{
 
             top:5px;
-            margin-left:-15px;
+            margin-left:-20px;
         }
         h1{
 
@@ -111,7 +108,7 @@ header{
                 display:block;
                 top:0;
                 height:60px;
-                line-height:50px;
+                line-height:60px;
             }
         }
     }
@@ -127,7 +124,7 @@ header{
     }
     .secondary-heading{
         display:block;
-        .dummy,h1{
+        h1{
             display:block;
         }
     }
@@ -138,11 +135,12 @@ header{
   z-index: 0;
   top: 270px;
   left: 20%;
-  height: calc(100% + 200px);
+  height:100%;
   width: 0px;
   border-right: 1px solid $secondary;
   @media screen and (max-width:992px) {
       left:10%;
+      top:110px;
   }
 }
 .nav{
@@ -188,7 +186,7 @@ header{
 }
 .posts{
     @media screen and (max-width:992px) {
-        margin-top:70px;
+        margin-top:60px;
     }
     width: 80%;
     padding-top: 20px;
