@@ -14,7 +14,7 @@ permalink: /categories/
 	<ul class="archives-list">
 		{% for post in label[1] %}
 
-			<li><a href="{{ post.url }}">{{ post.title }} </a><span class="date">{{ post.date | date:"%B %e ,%Y"}}</span></li>
+			<li><a href="{{ post.url }}">{{ post.title }} </a><span class="meta">{{ post.date | date:"%B %e ,%Y"}}</span></li>
 
 
 		{% endfor %}
