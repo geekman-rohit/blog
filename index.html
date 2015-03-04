@@ -1,20 +1,19 @@
 ---
-layout: front
+layout: default
 ---
+    <ul class="posts-list">
+        {% for post in site.posts limit:10 %}
+       <li class="post">
+           <div class="circle"></div>
+           <div class="date">
+               {{ post.date | date: "%B %e, %Y" }}
+         </div>
+         <div class="content">
+         <h2><a href="{{ post.url }}">{{ post.title  }}</a></h2>
 
-        <ul class="posts">
-            {% for post in site.posts limit:10 %}
-        <li class="post">
-          <h2><a href="{{ post.url }}">{{ post.title  }}</a></h2>
-          <span class="meta">
-            {{ post.date | date: "%B %e, %Y" }}
-          </span>
-          <p>
-              {{ post.content | strip_html | truncatewords:50 }}
-          </p>
-
-        </li>
-        {% endfor %}
-
-
-    </ul>
+         <p>{{ post.content | strip_html | truncatewords:50 }}
+         </p>
+    </div>
+       </li>
+       {% endfor %}
+       </ul>

@@ -1,7 +1,6 @@
 ---
-layout: cover
+layout: post
 title: "Learning to Code : The hard way - Part 1: Where to start? !"
-cover: puzzle.jpg
 categories: [coding, tutorial]
 ---
 
