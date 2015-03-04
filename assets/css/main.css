@@ -216,6 +216,9 @@ header {
     .posts article h2.article-heading a {
       color: inherit;
       text-decoration: none; }
+  .posts article a {
+    color: #3F76B2;
+    text-decoration: none; }
   .posts article .meta {
     color: #777;
     font-size: 0.9em;
