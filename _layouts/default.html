@@ -6,14 +6,39 @@
     <title>Blog</title>
     <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/syntax.css">
     <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/main.css">
+    <script src="{{site.url}}/assets/js/jquery.min.js"></script>
+    <script src="{{site.url}}/assets/js/jquery-scrollspy.js"></script>
+    <script type='text/javascript'>
+    $(document).ready(function() {
+            $('header').scrollspy({
+                max: 160,
+                onEnter: function(element, position) {
+
+                    $('.main').removeClass('mini');
+                },
+                onLeave: function(element, position) {
+
+                    $('.main').addClass('mini');
+                }
+            });
+        });
+</script>
+
 </head>
 
 <body>
 <div class="main">
     <header>
+
         <div class="dummy"></div>
         <div class="dummy secondary"></div>
         <h1>Geekman's Blog</h1>
+        <div class="secondary-heading">
+
+            <div class="dummy"></div>
+            <div class="dummy secondary"></div>
+            <h1>Geekman's Blog</h1>
+        </div>
     </header>
     <div class="main-line"></div>
     <div class="nav">
