@@ -11,3 +11,6 @@ So looks like my summer is gonna be awesome this year.
 On with preparations now.
 <br />
 Thank you, ***GSOC team*** and ***jQuery Foundation***.
+
+
+If any reader is interested here's a link  to my proposal : [My Proposal](https://docs.google.com/document/d/1tKXT5_dDL6P9WHbmChu368pyyty8BV4nNQ4tFvoCcFI/edit)
