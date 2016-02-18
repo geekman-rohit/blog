@@ -5,6 +5,5 @@ description: ""
 url: ""
 highlighter: "pygments"
 paginate: 10
-markdown: rdiscount
 permalink: pretty
 timezone: asia/kolkata
