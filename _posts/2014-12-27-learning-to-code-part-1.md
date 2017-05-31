@@ -19,6 +19,16 @@ You cannot learn to code by reading books, to learn to code, you need to Code!
 Okay, now that you have a computer and an Internet connection, its time to learn to code. Where to start ?
 here's a list:
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Ad for blog.rohit.codes -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7412741369819778"
+     data-ad-slot="7854986645"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **Step 2: Start Coding**
 
