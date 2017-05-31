@@ -15,7 +15,7 @@ Tic-Tac-Toe is relatively very easy to implement. All you need to do is keep tra
 2. Write a victory Condition.
 3. Write the Computer AI function to play the best possible move.
 
-#### The Board
+### The Board
 
 In most games, the visuals you see are merely a representation of things and objects handled in the background. Even in this very simple game I decided to take the same approach.
 
@@ -24,7 +24,7 @@ In most games, the visuals you see are merely a representation of things and obj
 This approach also allows us to test the game with different initial states when testing the AI function we are about to write.
 
 <br />
-#### The Victory Condition:
+### The Victory Condition:
 
 The Victory condition is very easy to write. You simply loop through rows and columns and see if any row or column have the same move.
 In this example I test the diagonals separately.
@@ -36,7 +36,7 @@ The Victory condition function takes a board as input, instead of just using the
 
 
 <br />
-#### The AI:
+### The AI:
 
 The AI is by far the hardest to implement. We loop through each possible future move recursively and give ratings based on if the move leads to victory.
 1. Play all possible current moves for current Player
@@ -51,7 +51,7 @@ This function basically iterates through all possible moves(of the computer and 
 
 
 <br />
-#### Putting it all together.
+### Putting it all together.
 
 Explore the complete code on github at
 [github.com/tinyjsgames/tictactoe/blob/master/js/tictactoe.js](https://github.com/tinyjsgames/tictactoe/blob/master/js/tictactoe.js)
