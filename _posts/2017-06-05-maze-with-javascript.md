@@ -33,6 +33,7 @@ Take a look at this code:
 1. We have marked wall cells with wall class
 2. The joints between walls are marked as joint class
 
+<br />
 
 ### Add some css magic to make wall cells look like borders
 
@@ -40,11 +41,21 @@ We reduce the width of vertical wall cells, height of horizontal wall cells, and
 
 <script src="https://gist.github.com/geekman-rohit/66ef22bbf7d8ee3e1070416d03d6eb3e.js"></script>
 
+<br />
+
 ### Making it clickable
 
 Making it clickable is as easy as it goes, we edit the generateCell function in the code above to add a click event trigger on every wall cell, and simply taggle an `inactive` class
 
 <script src="https://gist.github.com/geekman-rohit/cc0e27bc09dfc42f6cba215b8cddb4c5.js"></script>
+
+<br />
+
+### Explore the full code
+
+Explore the full code at [github.com/tinyjsgames/maze-generator/blob/master/js/table.js](https://github.com/tinyjsgames/maze-generator/blob/master/js/table.js)
+
+<br />
 
 ### In Part 2:
 In Part 2 of this post that I will be posting next week, I will try to make the maze playable with a starting position , a final position and a small ball as player!
